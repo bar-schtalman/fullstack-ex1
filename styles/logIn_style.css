@@ -8,17 +8,17 @@ body {
     background: linear-gradient(rgb(100, 159, 201), rgb(246, 141, 246));
     height: 100vh;
     margin: 0;
-    display: flex; /* זה ימרכז את הכל לאמצע המסך */
+    display: flex; 
     align-items: center; 
     justify-content: center;
-    font-family: sans-serif; /* פונט נעים יותר */
+    font-family: sans-serif; 
 }
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px; /* הגבלת רוחב כדי שלא יהיה רחב מדי */
+    max-width: 400px; 
 }
 
   form {
@@ -43,7 +43,7 @@ input {
 
 border: 2px solid black;
   margin-bottom: 15%;
-  width: 100%; /* האינפוט יתפוס את כל רוחב הטופס */
+  width: 100%; 
   padding: 5px;
 }
 .btns {
@@ -72,13 +72,12 @@ font-size: 1rem;
 
 .formdDiv{
     display: flex;
-    flex-direction: column; /* אחד מתחת לשני */
-    align-items: center;    /* ממרכז את הלייבל והאינפוט לאמצע */
+    flex-direction: column; 
+    align-items: center;    
     width: 50%;
 
 }
 
-/* פנייה ישירה דרך ה-Class שנתנו */
 .my-submit-btn {
     background-color: rgb(100, 159, 201); 
     color: white;             
@@ -93,7 +92,6 @@ font-size: 1rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-/* אפקט ה-Hover דרך ה-Class */
 .my-submit-btn:hover{
     background-color: rgb(70, 130, 180); 
     transform: scale(1.05);   
@@ -101,4 +99,35 @@ font-size: 1rem;
 button:hover{
       background-color: rgb(12, 70, 117); 
     transform: scale(1.05);   
+}
+.spinner {
+  display: none;  
+  height: 20px;
+  width: 300px;
+  background-color: #eee; 
+  border-radius: 20px;
+  border: 5px solid rgb(12, 70, 117);
+  overflow: hidden;
+}
+.filler{
+    height:100%;
+    width: 0;
+    background-color: rgb(100, 159, 201);
+    animation: loadingBar 2s linear infinite
+}
+@keyframes loadingBar {
+    0% {
+        width: 0%;
+    }
+    50% {
+        background-color: rgb(100, 159, 201);
+    }
+    100% {
+        width: 100%;
+        background-color: rgb(12, 70, 117); /* הופך לכהה יותר בסיום המילוי */
+    }
+}
+
+#sbtBtn:active+.spinner{
+    display: block;
 }

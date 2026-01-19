@@ -62,8 +62,8 @@ a{
   justify-content: center;
   width: fit-content;
 }
-.right_add,
-.left_add {
+#right_add,
+#left_add {
   margin-top: 15px;
   position: absolute;
   border: solid 2px black;
@@ -81,11 +81,11 @@ a{
   width: 50px;
 }
 
-.left_add{
+#left_add{
 top: 20%;
 left: 5%;
 }
-.right_add{
+#right_add{
 top: 20%;
 right: 5%;
 }
@@ -149,3 +149,38 @@ li:hover{
 h3,li,h1,a{
     font-family: sans-serif;
 }
+
+#right_add{
+    animation: onclock linear 1s  infinite;
+}
+
+@keyframes onclock{
+  form{}
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+#left_add{
+    animation: outclock linear 1s  infinite;
+}
+
+@keyframes outclock{
+  form{}
+  to{
+    transform: rotate(-360deg);
+  }
+}
+
+#title{
+  animation: bounce 0.8s linear infinite;
+  font-family: Arial, sans-serif;
+}
+@keyframes bounce{
+    0%,100%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-20px);
+    }
+  }
