@@ -1,3 +1,6 @@
+> **Note:** This project was updated according to the requirements of lesson **13.1**,  
+> including visual changes using **CSS animations and keyframes**.
+
 # 🌐 Fullstack – Exercise 1
 
 This is my **first project in a Fullstack course** 👋  
@@ -15,6 +18,8 @@ In this project, we created several web pages that simulate a basic user flow:
 - 🏠 Home page  
 - 📄 Additional content pages  
 
+The project also demonstrates the use of **HTML forms and input elements**, including text inputs, password fields, and basic form structure.
+
 There is **no backend or server** in this project.  
 Navigation between pages is done using links only.
 
@@ -22,15 +27,15 @@ Navigation between pages is done using links only.
 
 ## 🎯 Project Goals
 
-- Practice HTML structure
-- Practice CSS styling
-- Learn how to connect multiple pages
-- Understand basic website navigation
+- Practice HTML structure  
+- Practice CSS styling  
+- Work with forms and input elements  
+- Learn how to connect multiple pages  
+- Understand basic website navigation  
 
 ---
 
 ## 🧱 Technologies Used
 
 - HTML  
-- CSS  
-
+- CSS 
