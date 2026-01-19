@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/register_style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Let's Sign Up!</h1>
+      <form action="./home.html">
+        <div class="formdDiv" >
+          <label >Full name</label>
+          <input type="text" placeholder="Type your full name" required/>
+        </div>        <div class="formdDiv" >
+          <label >age</label>
+          <input type="number" required  min="18"/>
+        </div>        
+        <div class="formdDiv">
+
+  <div class="gender-options">
+    <div class="gender-item">
+      <input type="radio" name="Gender" id="male" value="Male" required>
+      <label for="male">Male</label>
+    </div>
+    <div class="gender-item">
+      <input type="radio" name="Gender" id="female" value="Female">
+      <label for="female">Female</label>
+    </div>
+    <div class="gender-item">
+      <input type="radio" name="Gender" id="none" value="None">
+      <label for="none">None</label>
+    </div>
+  </div>
+</div>
+        <div class="formdDiv" >
+          <label >Email</label>
+          <input type="text" placeholder="Type your email" required/>
+        </div>
+        <div class="formdDiv" >
+          <label >Password</label>
+          <input type="password" placeholder="Type your password"required />
+        </div >
+        <div class="formdDiv" >
+          <label >Subscription for updates</label>
+          <input type="checkbox"  />
+        </div >
+        <div class="formdDiv">
+          <input type="submit" value="register" class="my-submit-btn"/>
+        </div>
+        
+        <div class="btns">
+          <button class="btn">
+            <a href="./login.html">Already have an account? sign in!</a>
+          </button>
+                </div>
+      </form>
+
+
+    </div>
+    
+</body>
+</html>
